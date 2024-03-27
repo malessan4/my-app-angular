@@ -1,16 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-persona',
   templateUrl: './persona.component.html',
   styleUrls: ['./persona.component.css']
 })
-export class PersonaComponent implements OnInit{
+export class PersonaComponent {
 
-  constructor() {}
+  nombre: string = 'Juan';
+  apellido: string = 'Perez';
+  edad: number = 28;
+  //private edad: number = 28;
 
-  ngOnInit(): void {
-      
-  }
+  //eso es para hacerlo privado
+
+  /* getEdad():number{
+    return this.edad;
+  }*/
+
 
 }

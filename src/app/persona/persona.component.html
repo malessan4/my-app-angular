@@ -1,1 +1,13 @@
-<p>persona</p>
+<p>
+    Nombre: {{ nombre }}
+    Apellido: {{ apellido }}
+    Edad: {{ edad }}
+    <!-- Edad: {{ getEdad() }} esto es por si es privado -->
+    <!-- se puede usar expresiones en la interpolacion -->
+</p>
+
+<div (keyup)='0'>
+    <label>Repetidor:</label>
+    <input #entrada />
+    {{ entrada.value }}
+</div>
