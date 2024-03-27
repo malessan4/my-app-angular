@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { PersonasComponent } from './personas/personas.component';
 import { PersonaComponent } from './persona/persona.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
